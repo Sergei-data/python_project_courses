@@ -30,7 +30,7 @@ def avg_price_by_category(purchases):
         counts[cat] = counts.get(cat, 0) + 1
     return {cat: round(totals[cat] / counts[cat], 2) for cat in totals}
 
-def most_popylar_category(purchases):
+def most_popular_category(purchases):
     category_quantities = {}
     for p in purchases:
         cat = p["category"]
